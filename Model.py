@@ -30,4 +30,4 @@ os.makedirs(POS_PATH,exist_ok=True)
 os.makedirs(NEG_PATH,exist_ok=True)
 os.makedirs(ANC_PATH,exist_ok=True)
 
-
+BASE_DIR= r'C:\Users\hp\Desktop\MODEL\data\negative\lfw-deepfunneled\lfw-deepfunneled'
