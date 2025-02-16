@@ -31,3 +31,23 @@ os.makedirs(NEG_PATH,exist_ok=True)
 os.makedirs(ANC_PATH,exist_ok=True)
 
 BASE_DIR= r'C:\Users\hp\Desktop\MODEL\data\negative\lfw-deepfunneled\lfw-deepfunneled'
+
+def print_dataset_structure(BASE_DIR):
+    print("DATASET STUCTURE:")
+    for person_name in os.listdir(BASE_DIR):
+        person_folder=os.path.join(BASE_DIR,person_name)
+        if os.path.isdir(person_folder):
+            print(f"Person: {person_name}")
+            for image_name in os.listdir(person_folder):
+                print(f"Image: {image_name}")
+
+                
+
+
+
+
+
+
+
+
+
