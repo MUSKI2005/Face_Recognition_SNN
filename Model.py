@@ -15,6 +15,19 @@ class L1Dist(Layer):
     def call(self,input_embedding, validation_embedding):
         return tf.math.abs(input_embedding - validation_embedding)
 
+gpus =tf.config.list_physical_devices('GPU')
+if gpus:
+    for gpu in gpus :
+        tf.config.experimental.set_memory_growth(gpu, True)
+        print(f"GPU available : {gpu}")
 
+
+POS_PATH=os.path.join('data','positive')
+NEG_PATH=os.path.join('data','negitive')
+ANC_PATH=os.path.join('data','anchor')
+
+os.makedirs(POS_PATH,exist_ok=True)
+os.makedirs(NEG_PATH,exist_ok=True)
+os.makedirs(ANC_PATH,exist_ok=True)
 
 
