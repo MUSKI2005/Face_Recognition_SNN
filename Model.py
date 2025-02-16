@@ -41,7 +41,24 @@ def print_dataset_structure(BASE_DIR):
             for image_name in os.listdir(person_folder):
                 print(f"Image: {image_name}")
 
-                
+def display_sample_images(BASE_DIR, num_samples=5):
+    print("Displaying the sample images of each person:\n")
+    count=0
+    for person_name in os.listdir(BASE_DIR):
+        person_folder=os.path.join(BASE_DIR,person_name)
+        if os.path.isdir(person_folder):
+            for image_name in os.listdir(person_folder):
+                image_path=os.path.join(person_folder,image_name)
+                img=Image.open(image_path)
+                plt.imshow(img)
+                plt.title(f"{person_name} : {image_name}")
+                plt.axis('off')
+                plt.show()
+                count+=1
+                if count >=num_samples:
+                    return 
+
+
 
 
 
