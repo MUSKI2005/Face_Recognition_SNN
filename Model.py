@@ -59,6 +59,33 @@ def display_sample_images(BASE_DIR, num_samples=5):
                     return 
 
 
+import cv2
+import uuid
+
+os.path.join(ANC_PATH,'{}.jpg'.format(uuid.uuid1()))
+uuid.uuid1()
+for i in range(10):
+   cap=cv2.VedioCapture(i)
+   if cap.isOpened():
+       while cap.isOpened():
+           ret,frame=cap.read()
+           if not ret:
+               print("failed to read the frame, existing...")
+               break
+           resized_frame=cv2.resize(frame,(250,250))
+
+            #collecting anchors
+           if cv2.waitkey(1) &0xFF ==ord('a'):
+            imgname=os.path.join(ANC_PATH,'{}.jpg'.format(uuid.uuid1()))
+            cv2.imwrite(imgname,resized_frame)
+
+            # collecting positives
+            if cv2.waitkey(1) &0xFF == ord('p'):
+                imgname=os.path.join(POS_PATH,'{}.jpg'.format(uuid.uuid1()))
+                cv2.imwrite(imgname,resized_frame)
+
+            cv2.imshow('Resized image collection is this',resized_frame)
+            
 
 
 
