@@ -85,7 +85,17 @@ for i in range(10):
                 cv2.imwrite(imgname,resized_frame)
 
             cv2.imshow('Resized image collection is this',resized_frame)
-            
+
+            if cv2.waitkey(1) & 0xFF == ord('q'):
+                break
+            print("Camera not forund at index {i}")
+
+       else:
+         print(f"camera not found at index {i}")
+
+cap.release()
+cv2.destroyAllWindows()
+
 
 
 
