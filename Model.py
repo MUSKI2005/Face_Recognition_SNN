@@ -96,7 +96,11 @@ for i in range(10):
 cap.release()
 cv2.destroyAllWindows()
 
-
+import tensorflow as tf
+import os
+import glob
+import matplotlib.pyplot as plt
+import uuid
 
 
 
