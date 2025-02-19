@@ -115,6 +115,8 @@ def data_aug(img):
         data.append(img)
     return data
 
+img_path=os.path.join(ANC_PATH,r"C:\Users\hp\Desktop\MODEL\data\anchor\00bbe314-dbf7-11ef-9aec-b2c3c39739c6.jpg")
+
 
 
 
