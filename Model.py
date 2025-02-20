@@ -130,7 +130,10 @@ for file_name in os.listdir(os.path.join(POS_PATH)):
     for image in augmented_images:
        cv2.imwrite(os.path.join(POS_PATH,'{}.jpg'.format(uuid.uuid1())),image.numpy())
 
-
+# get our image directories
+# get our image directories
+anchor = tf.data.Dataset.list_files(rf"{ANC_PATH}/*.jpg").shuffle(buffer_size=1000)
+positive = tf.data.Dataset.list_files(rf"{POS_PATH}/*.jpg").shuffle(buffer_size=1000)
 
 
 
