@@ -120,9 +120,15 @@ img=cv2.imread(img_path)
 augmented_images=data_aug(img)
 
 for image in augmented_images:
-    cv2.imwrite(os.pathy.join(POS_PATH,'{}.jpg'.format(uuid.uuid1())),,image.numpy())
+    cv2.imwrite(os.path.join(POS_PATH,'{}.jpg'.format(uuid.uuid1())),image.numpy())
 
+for file_name in os.listdir(os.path.join(POS_PATH)):
+    img_path=os.path.join(POS_PATH,file_name)
+    img=cv2.imread(img_path)
+    augmented_images=data_aug(img)
 
+    for image in augmented_images:
+       cv2.imwrite(os.path.join(POS_PATH,'{}.jpg'.format(uuid.uuid1())),image.numpy())
 
 
 
