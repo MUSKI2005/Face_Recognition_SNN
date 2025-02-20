@@ -116,7 +116,11 @@ def data_aug(img):
     return data
 
 img_path=os.path.join(ANC_PATH,r"C:\Users\hp\Desktop\MODEL\data\anchor\00bbe314-dbf7-11ef-9aec-b2c3c39739c6.jpg")
+img=cv2.imread(img_path)
+augmented_images=data_aug(img)
 
+for image in augmented_images:
+    cv2.imwrite(os.pathy.join(POS_PATH,'{}.jpg'.format(uuid.uuid1())),,image.numpy())
 
 
 
