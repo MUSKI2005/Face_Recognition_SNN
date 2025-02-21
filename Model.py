@@ -140,6 +140,19 @@ if not negative_file_paths:
     raise ValueError("No files found in the {NEG_PATH} matching pattern '*.jpg'")
 negative=tf.data.Dataset.from_tensor_slices(negative_file_paths).shuffle(buffer_size=1000)
 
+# grabbing the anchors now
+dir_test=anchor.as_numpy_iterator()
+print(dir_test.next())
+
+# grabbing the positives now
+dir_test=positive.as_numpy_iterator()
+print(dir_test.next())
+
+# grabbing the nagatives now
+dir_test=negative.as_numpy_iterator()
+print(dir_test.next())
+
+
 
 
 
