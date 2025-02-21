@@ -135,5 +135,44 @@ anchor = tf.data.Dataset.list_files(rf"{ANC_PATH}/*.jpg").shuffle(buffer_size=10
 positive = tf.data.Dataset.list_files(rf"{POS_PATH}/*.jpg").shuffle(buffer_size=1000)
 
 # Use glob to find all negative images recursively
+negative_file_paths=glob.glob(f"{NEG_PATH}/**/*.jpg",recursive=True)
+if not negative_file_paths:
+    raise ValueError("No files found in the {NEG_PATH} matching pattern '*.jpg'")
+negative=tf.data.Dataset.from_tensor_slices(negative_file_paths).shuffle(buffer_size=1000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
