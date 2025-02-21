@@ -177,7 +177,7 @@ negatives=tf.data.Dataset.zip(anchor,negative,tf.data.Dataset.from_tensor_slices
 data=positives.concatenate(negatives)
 
 print(data)
-
+print(tf.ones(len(anchor))) #printing the number of ones
 
 
 
