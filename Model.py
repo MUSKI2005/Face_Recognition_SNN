@@ -178,7 +178,7 @@ data=positives.concatenate(negatives)
 
 print(data)
 print(tf.ones(len(anchor))) #printing the number of ones
-
+print(tf.zeros(len(anchor))) #printing the no. of zeros
 
 
 
