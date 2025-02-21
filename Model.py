@@ -188,7 +188,9 @@ print(iterator_labs.next())
 
 # printing the path for the anchors~positives shuffled
 samples=data.as_numpy_iterator()
+example=samples.next()
 print(samples.next())
+
 
 
 
