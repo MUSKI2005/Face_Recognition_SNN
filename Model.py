@@ -186,7 +186,9 @@ iterator_labs=class_labels.as_numpy_iterator()
 # now looping through each one of the labels in the class, and printing it
 print(iterator_labs.next())
 
-
+# printing the path for the anchors~positives shuffled
+samples=data.as_numpy_iterator()
+print(samples.next())
 
 
 
