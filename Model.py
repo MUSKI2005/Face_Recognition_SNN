@@ -180,6 +180,12 @@ print(data)
 print(tf.ones(len(anchor))) #printing the number of ones
 print(tf.zeros(len(anchor))) #printing the no. of zeros
 
+# creating the class.
+class_labels=tf.data.Dataset.from_tensor_slices(tf.zeros(len(anchor)))
+iterator_labs=class_labels.as_numpy_iterator()
+# now looping through each one of the labels in the class, and printing it
+print(iterator_labs.next())
+
 
 
 
