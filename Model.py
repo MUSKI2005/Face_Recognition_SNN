@@ -171,8 +171,12 @@ def preprocess(file_path):
     print(img.numpy().min())
     print(img.numpy().max())
 
+# Create labelled dataset
+positives=tf.data.Dataset.zip(anchor,positive,tf.data.Dataset.from_tensor_slices(tf.ones(len(list(anchor)))))  #when anchor+positive
+negatives=tf.data.Dataset.zip(anchor,negative,tf.data.Dataset.from_tensor_slices(tf.ones(len(list(anchor)))))   #when anchor+negative
+data=positives.concatenate(negatives)
 
-
+print(data)
 
 
 
