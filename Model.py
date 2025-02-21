@@ -152,6 +152,24 @@ print(dir_test.next())
 dir_test=negative.as_numpy_iterator()
 print(dir_test.next())
 
+# now writing the preprocessing function for THE SNN Model 
+def preprocess(file_path):
+    # reading the image for the file path
+    byte_img=tf.io.read_file(file_path)
+    # loading the image
+    img=tf.decode_jpeg(byte_img)
+    # preprocessing the image to be 100*100*3
+    img=tf.image.resize(img,(100,100))
+    # scanning our image to bet 0 to 1
+    img=img/255.0
+    # returm the image
+
+    img=preprocess(r'C:data\\anchor\\53d9b23d-d568-11ef-8fff-b2c3c39739c6.jpg') #here giving the file path of any random image
+    plt.imshow(img)
+    plt.axis('off')
+    plt.show()
+    print(img.numpy().min())
+    print(img.numpy().max())
 
 
 
