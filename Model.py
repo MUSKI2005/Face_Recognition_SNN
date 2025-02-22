@@ -217,6 +217,9 @@ print(samples.next())
 # printing the length of the array
 print(len(samples.next()))
 
+# Visualization of the array of ANCHOR IMAGES
+samp=samples.next()
+print(samp[0])
 
 
 
