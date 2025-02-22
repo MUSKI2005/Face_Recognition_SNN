@@ -197,8 +197,11 @@ def preprocess_twin(input_img,validation_img,label):
 
 res=preprocess_twin(*example)
 print(res)
+print(len(res))
 
-
+# printing the image in the output
+plt.imshow(res[0].numpy())
+plt.show()
 
 
 
