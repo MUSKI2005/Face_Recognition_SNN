@@ -203,11 +203,12 @@ print(len(res))
 plt.imshow(res[0].numpy())
 plt.show()
 
-# Now making the adatloader pipeline
+# Now making the dataloader pipeline
 data=data.map(preprocess_twin,num_parallel_calls=tf.data.experimental.AUTOTUNE)
 data=data.cache()
 
-
+# shuffling the data
+data=data.shuffle(buffer_size=3000)
 
 
 
