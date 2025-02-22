@@ -191,8 +191,12 @@ samples=data.as_numpy_iterator()
 example=samples.next()
 print(samples.next())
 
+# now preprocessing the image directories with the twin function
+def preprocess_twin(input_img,validation_img,label):
+    return (preprocess(input_img),preprocess(validation_img),label)
 
-
+res=preprocess_twin(*example)
+print(res)
 
 
 
