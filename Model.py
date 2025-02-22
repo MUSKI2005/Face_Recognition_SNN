@@ -203,7 +203,9 @@ print(len(res))
 plt.imshow(res[0].numpy())
 plt.show()
 
-
+# Now making the adatloader pipeline
+data=data.map(preprocess_twin,num_parallel_calls=tf.data.experimental.AUTOTUNE)
+data=data.cache()
 
 
 
