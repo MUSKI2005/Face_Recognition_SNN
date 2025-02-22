@@ -210,8 +210,12 @@ data=data.cache()
 # shuffling the data
 data=data.shuffle(buffer_size=3000)
 
+print(data)
+samples=data.as_numpy_iterator()
+print(samples.next())
 
-
+# printing the length of the array
+print(len(samples.next()))
 
 
 
