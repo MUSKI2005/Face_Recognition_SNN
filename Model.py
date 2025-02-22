@@ -221,9 +221,12 @@ print(len(samples.next()))
 samp=samples.next()
 print(samp[0])
 
+# displaying the anchors
+plt.imshow(samp[0])
+plt.show()
 
-
-
+# either the negative or positive
+print(samp[1])
 
 
 
