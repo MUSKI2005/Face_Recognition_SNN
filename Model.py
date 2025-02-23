@@ -240,6 +240,10 @@ train_data=data.take(round(len(data)*0.7))
 train_data=train_data.batch(16)
 train_data=train_data.prefetch(buffer_size=tf.data.experimental.AUTOTUNE) #instead of doing it manually do it by using AUTOTUNE
 
+val_data=data.skip(round(len(data)*0.7))
+val_data=val_data.take(round(len(data)*0.3))
+val_data=val_data.batch(16)
+val_data=val_data.prefetch(buffer_size=tf.data.experimental.AUTOTUNE)
 
 
 
