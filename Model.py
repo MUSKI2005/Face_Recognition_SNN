@@ -227,6 +227,14 @@ plt.show()
 
 # either the negative or positive
 print(samp[1])
+plt.imshow(samp[1])
+plt.show()
+
+# checking the prior samples our labels will vary upto which,if 2nd label is -ve then it'll be ideally 0
+print("Depending upon the 1st and the 2nd sample images the value of the label is: \n",samp[2]) 
+if samp[2]==1: print("That is the positive sample!")
+else: print("That is a negative sample!")
+
 
 
 
