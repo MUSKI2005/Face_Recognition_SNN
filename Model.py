@@ -238,7 +238,7 @@ else: print("That is a negative sample!")
 # Creating training partition here
 train_data=data.take(round(len(data)*0.7))
 train_data=train_data.batch(16)
-# train_data=train_data.prefetch(buffer_size=tf.data.experimental.AUTOTUNE) #instead of doing it manually do it by using AUTOTUNE
+train_data=train_data.prefetch(buffer_size=tf.data.experimental.AUTOTUNE) #instead of doing it manually do it by using AUTOTUNE
 
 
 
