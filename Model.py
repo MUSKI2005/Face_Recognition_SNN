@@ -245,6 +245,8 @@ val_data=val_data.take(round(len(data)*0.3))
 val_data=val_data.batch(16)
 val_data=val_data.prefetch(buffer_size=tf.data.experimental.AUTOTUNE)
 
+# printing the length of our train_data
+print(round(len(data) * 0.7)) #fetching 1st 480 samples
 
 
 
