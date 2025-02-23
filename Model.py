@@ -250,6 +250,8 @@ print(round(len(data) * 0.7)) #fetching 1st 480 samples
 
 # Comparing our previous data with train_data
 print(data)
+# Along with it dispalying the status of our train_data
+print(train_data) #slightly changed
 
 
 
