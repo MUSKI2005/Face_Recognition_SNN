@@ -269,7 +269,7 @@ test_data=data.skip(round(len(data)*0.7)) #here we skipped 1st 480 observations
 test_data=test_data.take(round(len(data)*0.3))
 test_data=test_data.batch(16)
 # prefetching
-
+test_data=test_data.prefetch(buffer_size=tf.data.experimental.AUTOTUNE)
 
 
 
