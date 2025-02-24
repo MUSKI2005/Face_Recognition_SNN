@@ -255,10 +255,11 @@ print(train_data) #slightly changed
 
 # now getting the array of our created batches
 train_samples=train_data.as_numpy_itrerator()
-train_samples=train_samples.next()
+train_sample=train_samples.next()
 print(train_sample)
 
-
+# getting the length of the train_data
+print(len(train_sample))
 
 
 
