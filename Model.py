@@ -277,3 +277,7 @@ print(round(len(data)*0.7))
 # now printing the length of last remaining 30% of our data ~206 images
 print(round(len(data) * 0.3))
 
+# Now building the embedding layer
+# create an L1 distance layer
+# compile the Siamese network
+# SAI- MESE
