@@ -253,8 +253,10 @@ print(data)
 # Along with it dispalying the status of our train_data
 print(train_data) #slightly changed
 
-
-
+# now getting the array of our created batches
+train_samples=train_data.as_numpy_itrerator()
+train_samples=train_samples.next()
+print(train_sample)
 
 
 
