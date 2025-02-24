@@ -271,5 +271,7 @@ test_data=test_data.batch(16)
 # prefetching
 test_data=test_data.prefetch(buffer_size=tf.data.experimental.AUTOTUNE)
 
+# printing the length of our test_data
+print(round(len(data)*0.7))
 
 
