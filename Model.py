@@ -281,3 +281,9 @@ print(round(len(data) * 0.3))
 # create an L1 distance layer
 # compile the Siamese network
 # SAI- MESE
+
+# so basically,
+# convolutional 
+# relu
+# max pooling
+# then again repeat these three
