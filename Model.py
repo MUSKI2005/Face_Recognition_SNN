@@ -274,4 +274,6 @@ test_data=test_data.prefetch(buffer_size=tf.data.experimental.AUTOTUNE)
 # printing the length of our test_data
 print(round(len(data)*0.7))
 
+# now printing the length of last remaining 30% of our data ~206 images
+print(round(len(data) * 0.3))
 
