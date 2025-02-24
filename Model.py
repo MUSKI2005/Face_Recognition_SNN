@@ -261,7 +261,8 @@ print(train_sample)
 # getting the length of the train_data
 print(len(train_sample))
 
-
+# Getting the length of the 1st sample
+print(len(train_sample[0])) #having 16 images of each sample from negative, positive, anchor from all three channels
 
 
 
