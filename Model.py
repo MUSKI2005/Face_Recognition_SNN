@@ -353,6 +353,8 @@ input_image=Input(name='input_img',shape=(100,100,3))
 # declaring our validation_image as well
 validation_image=Input(name='validation_img',shape=(100,100,3))
 
+# Now about to make the make_siamese_model
+
 
 
 
