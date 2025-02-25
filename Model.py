@@ -292,11 +292,11 @@ print(inp)
 c1=Conv2D(64,(10,10),activation='relu')(inp)
 c1
 
-# m1=MaxPooling2D(64,(2,2),padding='same')(c1)
-# m1
+m1=MaxPooling2D(64,(2,2),padding='same')(c1)
+m1
 
-# c2=Conv2D(128,(7,7),activation='relu')(m1)
-# m2=MaxPooling2D(128,(2,2),padding='same')(c2)
+c2=Conv2D(128,(7,7),activation='relu')(m1)
+m2=MaxPooling2D(128,(2,2),padding='same')(c2)
 
 # c3=Conv2D(128,(4,4),activation='relu')(m2)
 # m3=MaxPooling2D(64,(2,2),padding='same')(c3)
