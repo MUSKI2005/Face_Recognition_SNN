@@ -337,6 +337,11 @@ embedding.summary() #this will give us the compelete summary of our model that i
 # now we are going have 2 segeggated parts out of which one is going to be the anchors and another will be either positive or negative
 # L1 siamese dist. basically adds them tog. but actually gotta be subtract them
 
+# Siamese L1 distance class
+class L1Dist(Layer):
+    # init methord -inheritence
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
 
 
 
