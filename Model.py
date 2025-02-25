@@ -288,13 +288,51 @@ print(round(len(data) * 0.3))
 # max pooling
 # then again repeat these three
 inp=Input(shape=(100,100,3),name='input_image')
-prin(inp)
+print(inp)
+c1=Conv2D(64,(10,10),activation='relu')(inp)
+c1
 
+# m1=MaxPooling2D(64,(2,2),padding='same')(c1)
+# m1
 
+# c2=Conv2D(128,(7,7),activation='relu')(m1)
+# m2=MaxPooling2D(128,(2,2),padding='same')(c2)
 
+# c3=Conv2D(128,(4,4),activation='relu')(m2)
+# m3=MaxPooling2D(64,(2,2),padding='same')(c3)
 
+# c4=Conv2D(256,(4,4),activation='relu')(m3)
+# f1=Flatten()(c4) #flattening all of the elements
+# d1=Dense(4096,activation='sigmoid')(f1)
 
+def make_embedding():
+    inp=Input(shape=(100,100,3),name='input_image')
 
+     # 1st BLOCK
+    # 1st layer convolutional +relu activation in this 64 filters in the convo. and for the shape 10*10 pixals
+    # Then impliment the max pooling layer passing 64 units
+    c1=Conv2D(64,(10,10),activation='relu')(inp)
+    m1=MaxPooling2D(64,(2,2),padding='same')(c1)
+
+     # 2nd BLOCK
+    #now implimenting the next block of convolutional+ relu
+    c2=Conv2D(128,(7,7),activation='relu')(m1)
+    m2=MaxPooling2D(128,(2,2),padding='same')(c2)
+
+    # 3rd BLOCK
+    c3=Conv2D(128,(4,4),activation='relu')(m2)
+    m3=MaxPooling2D(64,(2,2),padding='same')(c3)
+
+    # now it's gonna be a convolutional +relu of 256 filters/units and 4*4
+    # then aft that adding the fully connected layer+ sigmoid 
+    c4=Conv2D(256,(4,4),activation='relu')(m3)
+    f1=Flatten()(c4) #flattening all of the elements
+    d1=Dense(4096,activation='sigmoid')(f1)
+
+    return Model(inputs=inp,outputs=d1,name='embedding')
+
+embedding=make_embedding() 
+embedding.summary() #this will give us the compelete summary of our model that is named as the variable mod.
 
 
 
