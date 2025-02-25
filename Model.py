@@ -287,3 +287,29 @@ print(round(len(data) * 0.3))
 # relu
 # max pooling
 # then again repeat these three
+inp=Input(shape=(100,100,3),name='input_image')
+prin(inp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
