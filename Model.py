@@ -334,6 +334,8 @@ def make_embedding():
 embedding=make_embedding() 
 embedding.summary() #this will give us the compelete summary of our model that is named as the variable mod.
 
+# now we are going have 2 segeggated parts out of which one is going to be the anchors and another will be either positive or negative
+# L1 siamese dist. basically adds them tog. but actually gotta be subtract them
 
 
 
