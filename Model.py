@@ -301,9 +301,9 @@ m2=MaxPooling2D(128,(2,2),padding='same')(c2)
 c3=Conv2D(128,(4,4),activation='relu')(m2)
 m3=MaxPooling2D(64,(2,2),padding='same')(c3)
 
-# c4=Conv2D(256,(4,4),activation='relu')(m3)
-# f1=Flatten()(c4) #flattening all of the elements
-# d1=Dense(4096,activation='sigmoid')(f1)
+c4=Conv2D(256,(4,4),activation='relu')(m3)
+f1=Flatten()(c4) #flattening all of the elements
+d1=Dense(4096,activation='sigmoid')(f1)
 
 def make_embedding():
     inp=Input(shape=(100,100,3),name='input_image')
