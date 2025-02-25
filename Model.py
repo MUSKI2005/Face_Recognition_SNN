@@ -347,6 +347,8 @@ class L1Dist(Layer):
     def call(self, input_embedding, validation_embedding):
         return tf.math.abs(input_embedding - validation_embedding) #this gonna return the absolute value
 
+# declaring our input_image
+input_image=Input(name='input_img',shape=(100,100,3))
 
 
 
