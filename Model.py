@@ -366,7 +366,8 @@ def make_siamese_model():
     distances=siamese_layer(embedding(input_image),embedding(validation_image))
     
     #Now checking whether the embeddings are similar or not.
-    
+    classifier=Dense(1,activation='sigmoid')(distances) #combining the distances with the sigmoid activation
+
 
 
 
