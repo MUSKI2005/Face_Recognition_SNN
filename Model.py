@@ -359,7 +359,12 @@ def make_siamese_model():
     input_image=Input(name='input_img',shape=(100,100,3))
     # validation image in the network
     validation_image=Input(name='validation_img',shape=(100,100,3))
-
+    # now we gonna take these raw  input images and pass them through our embedding model
+    # Combine siamese distance components
+    # siamese_layer=L1Dist()
+    # siamese_layer._name='distance'
+    # distances=siamese_layer(embedding(input_image),embedding(validation_image))
+    
 
 
 
