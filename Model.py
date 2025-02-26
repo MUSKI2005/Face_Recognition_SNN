@@ -372,6 +372,11 @@ inp_embedding=embedding(input_image)
 # now we are printing the input image status
 print(inp_embedding)
 
+val_embedding=embedding(validation_image)
+# printing the validation iamge status
+print(val_embedding)
+
+
 
 
 
