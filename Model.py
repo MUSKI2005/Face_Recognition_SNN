@@ -368,8 +368,9 @@ def make_siamese_model():
     #Now checking whether the embeddings are similar or not.
     classifier=Dense(1,activation='sigmoid')(distances) #combining the distances with the sigmoid activation
 
-
-
+inp_embedding=embedding(input_image)
+# now we are printing the input image status
+print(inp_embedding)
 
 
 
