@@ -365,7 +365,8 @@ def make_siamese_model():
     siamese_layer._name='distance'
     distances=siamese_layer(embedding(input_image),embedding(validation_image))
     
-
+    #Now checking whether the embeddings are similar or not.
+    
 
 
 
