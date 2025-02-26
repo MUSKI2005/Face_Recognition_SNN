@@ -357,6 +357,8 @@ validation_image=Input(name='validation_img',shape=(100,100,3))
 def make_siamese_model():
     #Anchor image input in the network
     input_image=Input(name='input_img',shape=(100,100,3))
+    # validation image in the network
+    validation_image=Input(name='validation_img',shape=(100,100,3))
 
 
 
