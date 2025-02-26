@@ -376,6 +376,10 @@ val_embedding=embedding(validation_image)
 # printing the validation iamge status
 print(val_embedding)
 
+# now taking our siamese layer
+siamese_layer=L1Dist()
+print(siamese_layer(inp_embedding,val_embedding))
+
 
 
 
