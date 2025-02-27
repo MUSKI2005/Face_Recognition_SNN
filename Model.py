@@ -391,6 +391,8 @@ print(classifier)
 siamese_network= Model(inputs=[input_image,validation_image],outputs=classifier,name='SiameseNetwork')
 print(siamese_network)
 
+# then getting the summary of our siamese network
+siamese_network.summary()
 
 
 
