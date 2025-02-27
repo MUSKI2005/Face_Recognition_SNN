@@ -399,7 +399,7 @@ siamese_model=make_siamese_model()
 siamese_model.summary() #this also gonna give the same thing likewise siamese_network did
 
 # Starting training the model
-
+# Setup the Loss function
 
 
 
