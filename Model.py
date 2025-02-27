@@ -383,6 +383,9 @@ print(siamese_layer(inp_embedding,val_embedding))
 # defining distances outside the function
 distances=siamese_layer(embedding(input_image),embedding(validation_image))
 
+# defining classifier outside the function
+classifier=Dense(1,activation='sigmoid')(distances) 
+print(classifier)
 
 
 
