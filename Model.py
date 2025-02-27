@@ -380,7 +380,8 @@ print(val_embedding)
 siamese_layer=L1Dist()
 print(siamese_layer(inp_embedding,val_embedding))
 
-
+# defining distances outside the function
+distances=siamese_layer(embedding(input_image),embedding(validation_image))
 
 
 
