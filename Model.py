@@ -387,6 +387,10 @@ distances=siamese_layer(embedding(input_image),embedding(validation_image))
 classifier=Dense(1,activation='sigmoid')(distances) 
 print(classifier)
 
+# Lastly printing our siamese network
+siamese_network= Model(inputs=[input_image,validation_image],outputs=classifier,name='SiameseNetwork')
+print(siamese_network)
+
 
 
 
