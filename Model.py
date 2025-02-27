@@ -401,5 +401,5 @@ siamese_model.summary() #this also gonna give the same thing likewise siamese_ne
 # Starting training the model
 # Setup the Loss function
 # Set up the optimizer  #gonna help us to backpropogate through our neural network
-
+# Build the custom Training step
 
