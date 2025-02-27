@@ -394,6 +394,11 @@ print(siamese_network)
 # then getting the summary of our siamese network
 siamese_network.summary()
 
+# even we can do
+siamese_model=make_siamese_model()
+siamese_model.summary() #this also gonna give the same thing likewise siamese_network did
+
+# Starting training the model
 
 
 
