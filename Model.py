@@ -416,7 +416,7 @@ checkpoint=tf.train.Checkpoint(opt=opt,siamese_model=siamese_model)
 # make prediction
 # calculate loss
 # Derive the gradiant
-
+# Calculate new weighs and apply
 
 
 
