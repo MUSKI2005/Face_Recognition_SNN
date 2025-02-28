@@ -410,3 +410,15 @@ opt=tf.keras.optimizers.Adam(1e-4)
 
 checkpoint_dir=r'C:\Users\hp\Desktop\MODEL\training_checkpoints'
 checkpoint_prefix=os.path.join(checkpoint_dir,'ckpt') #this ckpt means that we'll have all our checkpoints in a consistent  format
+checkpoint=tf.train.Checkpoint(opt=opt,siamese_model=siamese_model)
+
+
+
+
+
+
+
+
+
+
+
