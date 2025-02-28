@@ -413,7 +413,7 @@ checkpoint_prefix=os.path.join(checkpoint_dir,'ckpt') #this ckpt means that we'l
 checkpoint=tf.train.Checkpoint(opt=opt,siamese_model=siamese_model)
 
 # Build the train step function used to train 1 batch of our data
-
+# make prediction
 
 
 
