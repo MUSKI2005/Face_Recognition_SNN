@@ -415,7 +415,7 @@ checkpoint=tf.train.Checkpoint(opt=opt,siamese_model=siamese_model)
 # Build the train step function used to train 1 batch of our data
 # make prediction
 # calculate loss
-
+# Derive the gradiant
 
 
 
