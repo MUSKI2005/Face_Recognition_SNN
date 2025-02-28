@@ -407,3 +407,6 @@ siamese_model.summary() #this also gonna give the same thing likewise siamese_ne
 binary_cross_loss=tf.losses.BinaryCrossentropy()
 # find the optimizer ~adam optimizer
 opt=tf.keras.optimizers.Adam(1e-4)
+
+checkpoint_dir=r'C:\Users\hp\Desktop\MODEL\training_checkpoints'
+checkpoint_prefix=os.path.join(checkpoint_dir,'ckpt') #this ckpt means that we'll have all our checkpoints in a consistent  format
