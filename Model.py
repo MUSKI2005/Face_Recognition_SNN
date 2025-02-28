@@ -404,3 +404,5 @@ siamese_model.summary() #this also gonna give the same thing likewise siamese_ne
 # Build the custom Training step
 # Create the training loop
 # Train the MODEL
+binary_cross_loss=tf.losses.BinaryCrossentropy()
+# fine the optimizer ~adam optimizer
