@@ -405,4 +405,5 @@ siamese_model.summary() #this also gonna give the same thing likewise siamese_ne
 # Create the training loop
 # Train the MODEL
 binary_cross_loss=tf.losses.BinaryCrossentropy()
-# fine the optimizer ~adam optimizer
+# find the optimizer ~adam optimizer
+opt=tf.keras.optimizers.Adam(1e-4)
