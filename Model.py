@@ -419,6 +419,10 @@ checkpoint=tf.train.Checkpoint(opt=opt,siamese_model=siamese_model)
 # Calculate new weighs and apply
 
 # Now calculating the 1st batch
+test_batch=train_data.as_numpy_iterator()
+batch_1=test_batch.next()
+print(batch_1)
+
 # then printing the langth of the batch of the anchor, positive/negative, label
 
 
