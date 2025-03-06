@@ -418,7 +418,7 @@ checkpoint=tf.train.Checkpoint(opt=opt,siamese_model=siamese_model)
 # Derive the gradiant
 # Calculate new weighs and apply
 
-
+# Now calculating the 1st batch
 
 
 
