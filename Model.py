@@ -434,6 +434,9 @@ print(batch_1[1])
 # Then for the lables
 print(batch_1[2])
 
+# Now grabbing our features (X)
+X=batch_1[:2] #we stored batch_1 in variable X
+print(X)
 
 
 
