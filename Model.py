@@ -426,3 +426,4 @@ print(batch_1)
 # then printing the length of the batch of the anchor, positive/negative, label
 print(len(batch_1)) #1st component gonna be anchor image
 
+print("the batch of anchor images\n:",batch_1[0]) #representation of the anchor images
