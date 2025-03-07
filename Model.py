@@ -443,7 +443,9 @@ print(X)
 # now printing the shape of X 
 X_shape=np.array(X).shape
 
-
+# Now grabbing our labels
+y=batch_1[2]
+print(y)
 
 
 
