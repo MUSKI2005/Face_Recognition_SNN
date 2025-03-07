@@ -453,6 +453,9 @@ def train_step(batch):
     with tf.GradiantTape() as tape:
         X=batch[:2]
         y=batch[2]
+        # Forward pass
+        # The predicted outcome comes here
+        y_hat=siamese_model(X,training=True) #making prediction, and setting training =True mandotory
 
 
 
