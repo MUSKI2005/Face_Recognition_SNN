@@ -457,6 +457,9 @@ def train_step(batch):
         # The predicted outcome comes here
         y_hat=siamese_model(X,training=True) #making prediction, and setting training =True mandotory
 
+        # calculating loss
+        loss=binary_cross_loss(y,y_hat)
+    print(loss)
 
 
 
