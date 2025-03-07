@@ -447,7 +447,12 @@ X_shape=np.array(X).shape
 y=batch_1[2]
 print(y)
 
-
+@tf.function #this compiles the function into a callable tensorflow graph
+def train_step(batch):
+    #recording all the operations here
+    with tf.GradiantTape() as tape:
+        X=batch[:2]
+        y=batch[2]
 
 
 
