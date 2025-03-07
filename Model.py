@@ -423,6 +423,6 @@ test_batch=train_data.as_numpy_iterator()
 batch_1=test_batch.next()
 print(batch_1)
 
-# then printing the langth of the batch of the anchor, positive/negative, label
-
+# then printing the length of the batch of the anchor, positive/negative, label
+print(len(batch_1)) #1st component gonna be anchor image
 
