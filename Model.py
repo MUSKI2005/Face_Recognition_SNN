@@ -440,6 +440,8 @@ print(X)
 
 # Now printing the length of the features
 print(X)
+# now printing the shape of X 
+X_shape=np.array(X).shape
 
 
 
