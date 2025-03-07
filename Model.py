@@ -438,7 +438,8 @@ print(batch_1[2])
 X=batch_1[:2] #we stored batch_1 in variable X
 print(X)
 
-
+# Now printing the length of the features
+print(X)
 
 
 
