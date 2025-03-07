@@ -431,6 +431,8 @@ print("the batch of anchor images\n:",batch_1[0]) #representation of the anchor 
 # Doing the same thing for the anchor and the negative/positive images
 print(batch_1[1])
 
+# Then for the lables
+print(batch_1[2])
 
 
 
