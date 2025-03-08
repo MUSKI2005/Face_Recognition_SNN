@@ -473,7 +473,9 @@ def train_step(batch):
 #  while the train function is focused on training for one batch, the loop here will be used to iterate over each and evaery batch in the dataset.
 def train(data,val_data,EPOCHS):
     # loop through the epochs
-
+    for epoch in range(1,EPOCHS+1):
+        print('\n Epoch{}/{}'.format(epoch,EPOCHS))
+        progbar=tf.keras.utils.Progbar(len(data)) #defining the progreass bar
 
 
 
