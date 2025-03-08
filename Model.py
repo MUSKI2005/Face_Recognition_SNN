@@ -470,6 +470,7 @@ def train_step(batch):
     return loss
 
 # Building our training loop
+#  while the train function is focused on training for one batch, the loop here will be used to iterate over each and evaery batch in the dataset.
 
 
 
