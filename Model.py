@@ -471,7 +471,8 @@ def train_step(batch):
 
 # Building our training loop
 #  while the train function is focused on training for one batch, the loop here will be used to iterate over each and evaery batch in the dataset.
-
+def train(data,val_data,EPOCHS):
+    # loop through the epochs
 
 
 
