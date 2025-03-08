@@ -476,7 +476,10 @@ def train(data,val_data,EPOCHS):
     for epoch in range(1,EPOCHS+1):
         print('\n Epoch{}/{}'.format(epoch,EPOCHS))
         progbar=tf.keras.utils.Progbar(len(data)) #defining the progreass bar
-
+        
+        # Creating metrics object
+        r=Recall()
+        p=Precision()
 
 
 
