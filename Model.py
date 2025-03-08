@@ -460,6 +460,8 @@ def train_step(batch):
         # calculating loss
         loss=binary_cross_loss(y,y_hat)
     print(loss)
+ # calculating the gradiants
+    grad=tape.gradient(loss,siamese_model.trainable_variables)
 
 
 
