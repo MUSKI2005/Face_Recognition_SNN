@@ -483,10 +483,10 @@ def train(data,val_data,EPOCHS):
 
     # loop through each batch
     for idx,batch in enumerate(data):
-        # Run train step here
-        loss=train_stepy_hat=siamese_model.predict(batch[:2])
-        r.update_state(batch[2],y_hat)
-        p.update
+        # # Run train step here
+        # loss=train_stepy_hat=siamese_model.predict(batch[:2])
+        # r.update_state(batch[2],y_hat)
+        # p.update
 
 
 
