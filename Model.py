@@ -476,11 +476,17 @@ def train(data,val_data,EPOCHS):
     for epoch in range(1,EPOCHS+1):
         print('\n Epoch{}/{}'.format(epoch,EPOCHS))
         progbar=tf.keras.utils.Progbar(len(data)) #defining the progreass bar
-        
+
         # Creating metrics object
         r=Recall()
         p=Precision()
 
+    # loop through each batch
+    for idx,batch in enumerate(data):
+        # Run train step here
+        loss=train_stepy_hat=siamese_model.predict(batch[:2])
+        r.update_state(batch[2],y_hat)
+        p.update
 
 
 
