@@ -500,9 +500,8 @@ def train(data,val_data,EPOCHS):
 
 # Now evaluating our model
 # Evaluate performance
-# Import metric calculations ,
-
-
+# Import metric calculations ,here we'll use precision and recall( these are the metrices in tensorflow)
+from tensorflow.keras.metrics import Precision, Recall, BinaryAccuracy #type:ignore
 
 
 
