@@ -499,7 +499,7 @@ def train(data,val_data,EPOCHS):
            checkpoint.save(file_prefix=checkpoint_prefix)
 
 # Now evaluating our model
-
+# Evaluate performance
 
 
 
