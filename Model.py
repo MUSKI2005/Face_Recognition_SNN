@@ -502,7 +502,7 @@ def train(data,val_data,EPOCHS):
 # Evaluate performance
 # Import metric calculations ,here we'll use precision and recall( these are the metrices in tensorflow)
 from tensorflow.keras.metrics import Precision, Recall, BinaryAccuracy #type:ignore
-
+# Precision demonstrates what proportion of the positives were actually correct.
 
 
 
