@@ -481,18 +481,21 @@ def train(data,val_data,EPOCHS):
         r=Recall()
         p=Precision()
 
-    # loop through each batch
-    for idx,batch in enumerate(data):
-        # Run train step here
-        loss=train_stepy_hat=siamese_model.predict(batch[:2])
-        r.update_state(batch[2],y_hat)
-        p.update_state(batch[2],y_hat)
-        progbar.update(idx+1)
-    print(loss.numpy(),r.result().numpy(),p.result().numpy())
+        # loop through each batch
+        for idx,batch in enumerate(data):
+            # Run train step here
+            loss=train_stepy_hat=siamese_model.predict(batch[:2])
+            r.update_state(batch[2],y_hat)
+            p.update_state(batch[2],y_hat)
+            progbar.update(idx+1)
+        print(loss.numpy(),r.result().numpy(),p.result().numpy())
 
-# Evaluate less frequently ,e.g, every 5 epochs
-if
+        # Evaluate less frequently ,e.g, every 5 epochs
+        if epoch%5==0:
+           evaluate_model(val_data)
 
+        #    Disabling checkpoint saving for quick testing
+        if epoch% 10==0: #save checkpoints at every 10 epochs
 
 
 
