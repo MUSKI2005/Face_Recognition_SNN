@@ -498,6 +498,7 @@ def train(data,val_data,EPOCHS):
         if epoch% 10==0: #save checkpoints at every 10 epochs
            checkpoint.save(file_prefix=checkpoint_prefix)
 
+# Now evaluating our model
 
 
 
