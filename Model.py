@@ -505,6 +505,9 @@ from tensorflow.keras.metrics import Precision, Recall, BinaryAccuracy #type:ign
 # Precision demonstrates what proportion of the positives were actually correct.
 # Recall shows the actual proportion of actual positives were identified correctly.
 
+# Get a batch of test data
+test_data_iterator = test_data.as_numpy_iterator()
+
 
 
 
