@@ -513,4 +513,6 @@ test_var = test_data_iterator.next()
 
 # Unpack the batch into input, validation, and labels
 test_input, test_val, y_true = test_var  #here we unpacked the values , here y_true is effectively our LABELS
+# displaying the batch
+print("The array of test_var:\n",test_var) 
 
