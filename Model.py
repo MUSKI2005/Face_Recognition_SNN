@@ -528,7 +528,7 @@ print("Length of the input images:\n",len(test_var[0])) #16
 
 # Now doing the same for the 2nd example that is either negative/positive ~validation
 print(test_var[1])
-
+print(len(test_var[1])) #again 16
 
 
 
