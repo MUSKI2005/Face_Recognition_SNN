@@ -519,6 +519,7 @@ print("The array of test_var:\n",test_var)
 # dispalying the length of the batch
 print("This is the length of the outer structure of test_var:\n",len(test_var)) #3 
 
+# ~one is input images,validation images, labels
 
 
 
