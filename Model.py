@@ -516,3 +516,43 @@ test_input, test_val, y_true = test_var  #here we unpacked the values , here y_t
 # displaying the batch
 print("The array of test_var:\n",test_var) 
 
+# dispalying the length of the batch
+print("This is the length of the outer structure of test_var:\n",len(test_var)) #3 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
