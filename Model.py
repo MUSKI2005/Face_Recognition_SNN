@@ -530,6 +530,8 @@ print("Length of the input images:\n",len(test_var[0])) #16
 print(test_var[1])
 print(len(test_var[1])) #again 16
 
+# now getting the labels
+print("This is the array of the labels in test_var:", test_var[2])
 
 
 
