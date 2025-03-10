@@ -523,6 +523,8 @@ print("This is the length of the outer structure of test_var:\n",len(test_var)) 
 # printing the array of input images
 print("This gives the array of the input images means the anchor:\n",test_var[0])
 
+# length of input iamges
+print("Length of the input images:\n",len(test_var[0])) #16
 
 
 
