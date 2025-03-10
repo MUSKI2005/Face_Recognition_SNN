@@ -520,8 +520,8 @@ print("The array of test_var:\n",test_var)
 print("This is the length of the outer structure of test_var:\n",len(test_var)) #3 
 
 # ~one is input images,validation images, labels
-
-
+# printing the array of input images
+print("This gives the array of the input images means the anchor:\n",test_var[0])
 
 
 
