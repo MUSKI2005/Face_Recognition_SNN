@@ -508,6 +508,7 @@ from tensorflow.keras.metrics import Precision, Recall, BinaryAccuracy #type:ign
 # Get a batch of test data
 test_data_iterator = test_data.as_numpy_iterator()
 
-
+# Fetch the first batch
+test_var = test_data_iterator.next()
 
 
