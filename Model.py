@@ -526,7 +526,8 @@ print("This gives the array of the input images means the anchor:\n",test_var[0]
 # length of input iamges
 print("Length of the input images:\n",len(test_var[0])) #16
 
-
+# Now doing the same for the 2nd example that is either negative/positive ~validation
+print(test_var[1])
 
 
 
