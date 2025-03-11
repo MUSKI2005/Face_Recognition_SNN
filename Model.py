@@ -539,7 +539,7 @@ print("This is the array of the labels in test_var:", test_var[2])
 # Verify that the unpacked variables match the elements in test_var
 print("Verification:")
 print("test_input == test_var[0]:", np.array_equal(test_input, test_var[0]))
-
+print("test_val == test_var[1]:", np.array_equal(test_val, test_var[1]))
 
 
 
