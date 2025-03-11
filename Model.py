@@ -533,6 +533,7 @@ print(len(test_var[1])) #again 16
 # now getting the labels
 print("This is the array of the labels in test_var:", test_var[2])
 
+# this also does means that our test_input=test_var[0], test_val=test_var[1], 
 
 
 
