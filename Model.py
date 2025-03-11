@@ -538,7 +538,7 @@ print("This is the array of the labels in test_var:", test_var[2])
 # now checking whether we enemurated right or not
 # Verify that the unpacked variables match the elements in test_var
 print("Verification:")
-
+print("test_input == test_var[0]:", np.array_equal(test_input, test_var[0]))
 
 
 
