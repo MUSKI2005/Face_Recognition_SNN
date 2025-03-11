@@ -536,8 +536,8 @@ print("This is the array of the labels in test_var:", test_var[2])
 # this also does means that our test_input=test_var[0], test_val=test_var[1], 
 
 # now checking whether we enemurated right or not
-
-
+# Verify that the unpacked variables match the elements in test_var
+print("Verification:")
 
 
 
