@@ -581,7 +581,7 @@ y_hat=siamese_model.predict([test_input,test_val])#here we passed two streams on
                                                   #here y_hat means prediction
 print(y_hat,flush=True)
 
-# Post processing the results
+# Post processing the results, with the binary outcomes
 
 
 
