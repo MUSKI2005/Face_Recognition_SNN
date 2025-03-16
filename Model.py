@@ -545,10 +545,15 @@ print("y_true == test_var[2]:", np.array_equal(y_true, test_var[2]))
 def evaluate_model(val_data):
     precision=tf.keras.mertics.Precision()
     recall=tf.keras.Recall()
+    binary_accuracy = tf.keras.metrics.BinaryAccuracy()
+
     
     for val_batch in val_data:
-        val_x,val_y=val_batch[:2]
-
+        val_X, val_y = val_batch[:2], val_batch[2]
+        val_y_hat = siamese_model(val_X, training=False)
+        precision.update_state(val_y, val_y_hat)
+        recall.update_state(val_y, val_y_hat)
+        binary_accuracy.update_state(val_y, val_y_hat)
 
 
 
