@@ -542,6 +542,13 @@ print("test_input == test_var[0]:", np.array_equal(test_input, test_var[0]))
 print("test_val == test_var[1]:", np.array_equal(test_val, test_var[1]))
 print("y_true == test_var[2]:", np.array_equal(y_true, test_var[2]))
 
+def evaluate_model(val_data):
+    precision=tf.keras.mertics.Precision()
+    recall=tf.keras.Recall()
+    
+    for val_batch in val_data:
+        val_x,val_y=val_batch[:2]
+
 
 
 
