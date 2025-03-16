@@ -572,7 +572,9 @@ physical_devices = tf.config.list_physical_devices('GPU')
 if physical_devices:
     tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
-
+# Train the model
+EPOCHS = 5  # Reduce the number of epochs for faster testing
+train(train_data, val_data, EPOCHS)
 
 
 
