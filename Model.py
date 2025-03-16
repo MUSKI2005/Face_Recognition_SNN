@@ -559,7 +559,9 @@ def evaluate_model(val_data):
     precision.reset_state()
     recall.reset_state()
     binary_accuracy.reset_state()
-    
+
+# # Example input shape
+# input_shape = (100, 100, 3)
 
 
 
