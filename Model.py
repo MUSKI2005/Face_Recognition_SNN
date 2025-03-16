@@ -577,7 +577,9 @@ EPOCHS = 5  # Reduce the number of epochs for faster testing
 train(train_data, val_data, EPOCHS)
 
 # Now making predictions
-y_hat=siamese_model.predict([test_input,test_val])#here we passed two streams
+y_hat=siamese_model.predict([test_input,test_val])#here we passed two streams one is input data and another is validation data
+                                                  #here y_hat means prediction
+print(y_hat,flush=True)
 
 
 
