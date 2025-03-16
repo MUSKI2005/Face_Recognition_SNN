@@ -576,7 +576,7 @@ if physical_devices:
 EPOCHS = 5  # Reduce the number of epochs for faster testing
 train(train_data, val_data, EPOCHS)
 
-
+# Now making predictions
 
 
 
