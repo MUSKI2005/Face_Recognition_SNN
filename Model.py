@@ -563,7 +563,9 @@ def evaluate_model(val_data):
 # # Example input shape
 # input_shape = (100, 100, 3)
 
-
+# Create the Siamese network
+siamese_network = make_siamese_model()
+siamese_network.summary()
 
 
 
