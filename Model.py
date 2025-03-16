@@ -568,6 +568,7 @@ siamese_network = make_siamese_model()
 siamese_network.summary()
 
 #  Ensure that TensorFlow is using GPU if available
+physical_devices = tf.config.list_physical_devices('GPU')
 
 
 
