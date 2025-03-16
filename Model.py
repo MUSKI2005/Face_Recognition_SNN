@@ -554,6 +554,13 @@ def evaluate_model(val_data):
         precision.update_state(val_y, val_y_hat)
         recall.update_state(val_y, val_y_hat)
         binary_accuracy.update_state(val_y, val_y_hat)
+    
+    print(f"Precision:{precision.result().numpy()},Recall:{recall.result().numpy()},Accuracy:{binary_accuracy().numpy()}")
+    precision.reset_state()
+    recall.reset_state()
+    binary_accuracy.reset_state()
+    
+
 
 
 
