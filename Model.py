@@ -586,7 +586,10 @@ binary_outcomes=[1 if prediction > 0.5 else 0 for prediction in y_hat] #this wil
 
 #  we can even do 
 # res=[]
-
+#     if prediction>0.5:
+#         res.append(1)
+#     else:
+# 
 
 
 
