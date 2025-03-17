@@ -589,7 +589,9 @@ binary_outcomes=[1 if prediction > 0.5 else 0 for prediction in y_hat] #this wil
 #     if prediction>0.5:
 #         res.append(1)
 #     else:
-# 
+    #   res.append(0)
+
+# lets compare y_hat(predicted outcome) with y_true (labels)
 
 
 
