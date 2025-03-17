@@ -600,6 +600,6 @@ print("True Labels (y_true):", y_true,flush=True)
 # Evaluate performance
 precision = Precision() #same for Precision
 recall = Recall() # Creating a metric object for Recall
-
+binary_accuracy = BinaryAccuracy()
 
 
