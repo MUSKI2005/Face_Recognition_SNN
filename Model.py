@@ -596,6 +596,7 @@ binary_outcomes=[1 if prediction > 0.5 else 0 for prediction in y_hat] #this wil
 print("Binary outcomes of y_hat:", binary_outcomes,flush=True)
 print("True Labels (y_true):", y_true,flush=True)
 
+# Now rather than of doing all this this manually we can actually  do this by using the metrices and precision
 
 
 
