@@ -602,4 +602,4 @@ precision = Precision() #same for Precision
 recall = Recall() # Creating a metric object for Recall
 binary_accuracy = BinaryAccuracy()
 
-
+# Update metrics, # updating the state, calculating the recall value
