@@ -638,6 +638,9 @@ plt.figure(figsize=(10,8)) #setting the size of our image
 plt.subplot(1,2,1)
 plt.imshow(test_input[1]) 
 
+plt.subplot(1,2,2)
+plt.imshow(test_val[1]) #1st validation image
+plt.show()
 
 
 
