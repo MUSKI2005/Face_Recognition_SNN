@@ -660,8 +660,8 @@ model_custom = tf.keras.models.load_model('siamesemodel.custom.h5',
       
 # now if we wanna use our model then simply
 # make predictions with RELOADED MODEL
-
-
+siamese_model.predict([test_input,test_val])
+# now getting the summary of the model
 
 
 
