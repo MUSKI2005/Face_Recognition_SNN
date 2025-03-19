@@ -644,7 +644,7 @@ plt.show()
 
 #Save the model, customizing our model by downloading it
 # save the weights
-
+# Save the model with .h5 extension
 
 
 
