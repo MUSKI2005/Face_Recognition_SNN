@@ -645,7 +645,8 @@ plt.show()
 #Save the model, customizing our model by downloading it
 # save the weights
 # Save the model with .h5 extension
-
+siamese_model.save('siamesemodel.h5')
+# now reloading our model
 
 
 
