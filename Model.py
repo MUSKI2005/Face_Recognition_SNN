@@ -625,6 +625,8 @@ print(r.result().numpy(),p.result().numpy())
 import matplotlib.pyplot as plt
 from matplotlib import pyplot
 
+# Now Visualizing our results
+plt.figure(figsize=(10,8)) #setting the size of our image
 
 
 
