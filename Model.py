@@ -603,3 +603,51 @@ recall = Recall() # Creating a metric object for Recall
 binary_accuracy = BinaryAccuracy()
 
 # Update metrics, # updating the state, calculating the recall value
+precision.update_state(y_true, y_hat) #two positional arguments y_true and y_hat
+recall.update_state(y_true, y_hat)
+binary_accuracy.update_state(y_true, y_hat)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
