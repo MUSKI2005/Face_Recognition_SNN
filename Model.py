@@ -652,7 +652,7 @@ model=tf.keras.models.load_model('siamesemodel.keras',
                                                  'BinaryCrossentropy':tf.losses.BinaryCrossentropy})
 
 # save the model with a custom extension
-
+siamese_model.save('siamesemodel.custom.h5')
 
 
 
