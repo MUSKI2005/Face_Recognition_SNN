@@ -633,7 +633,8 @@ plt.subplot(1,2,2)
 plt.imshow(test_val[0]) #1st validation image
 plt.show()
 
-
+# Now Visualizing our results for another pair of images.
+plt.figure(figsize=(10,8)) #setting the size of our image
 
 
 
