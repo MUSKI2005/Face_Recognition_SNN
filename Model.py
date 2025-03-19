@@ -654,7 +654,7 @@ model=tf.keras.models.load_model('siamesemodel.keras',
 # save the model with a custom extension
 siamese_model.save('siamesemodel.custom.h5')
 
-
+# Load the model from the custom extension (assuming it's HDF5 format)
 
 
 
