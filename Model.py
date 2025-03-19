@@ -607,6 +607,10 @@ precision.update_state(y_true, y_hat) #two positional arguments y_true and y_hat
 recall.update_state(y_true, y_hat)
 binary_accuracy.update_state(y_true, y_hat)
 
+# Print metrics, returning the results
+print(f"Precision: {precision.result().numpy()*100}",)
+print(f"Recall: {recall.result().numpy()*100}")
+print(f"Binary Accuracy: {binary_accuracy.result().numpy()*100}")
 
 
 
