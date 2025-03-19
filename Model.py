@@ -612,6 +612,15 @@ print(f"Precision: {precision.result().numpy()*100}",)
 print(f"Recall: {recall.result().numpy()*100}")
 print(f"Binary Accuracy: {binary_accuracy.result().numpy()*100}")
 
+# NEWLY ADDED
+r=Recall()
+p=Precision()
+for test_input,test_val,y_true in test_data.as_numpy_iterator():
+    y_hat=siamese_model.predict([test_input,test_val])
+    r.update_state(y_true,y_hat)
+    p.update_state(y_true,y_hat)
+
+print(r.result().numpy(),p.result().numpy())
 
 
 
