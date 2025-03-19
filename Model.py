@@ -643,6 +643,7 @@ plt.imshow(test_val[1]) #1st validation image
 plt.show()
 
 #Save the model, customizing our model by downloading it
+# save the weights
 
 
 
