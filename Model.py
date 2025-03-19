@@ -622,6 +622,9 @@ for test_input,test_val,y_true in test_data.as_numpy_iterator():
 
 print(r.result().numpy(),p.result().numpy())
 
+import matplotlib.pyplot as plt
+from matplotlib import pyplot
+
 
 
 
