@@ -647,9 +647,11 @@ plt.show()
 # Save the model with .h5 extension
 siamese_model.save('siamesemodel.h5')
 # now reloading our model
+model=tf.keras.models.load_model('siamesemodel.keras',
+                                 custom_objects={'L1Dist':L1Dist,
+                                                 'BinaryCrossentropy':tf.losses.BinaryCrossentropy})
 
-
-
+# save the model with a custom extension
 
 
 
