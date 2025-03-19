@@ -655,7 +655,10 @@ model=tf.keras.models.load_model('siamesemodel.keras',
 siamese_model.save('siamesemodel.custom.h5')
 
 # Load the model from the custom extension (assuming it's HDF5 format)
-
+model_custom = tf.keras.models.load_model('siamesemodel.custom.h5',
+                                          custom_objects={'L1Dist': L1Dist, 'BinaryCrossentropy': tf.losses.BinaryCrossentropy})
+      
+# now if we wanna use our model then simply
 
 
 
