@@ -627,7 +627,8 @@ from matplotlib import pyplot
 
 # Now Visualizing our results
 plt.figure(figsize=(10,8)) #setting the size of our image
-
+plt.subplot(1,2,1)
+plt.imshow(test_input[0]) 
 
 
 
