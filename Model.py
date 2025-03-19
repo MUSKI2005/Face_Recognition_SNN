@@ -659,7 +659,7 @@ model_custom = tf.keras.models.load_model('siamesemodel.custom.h5',
                                           custom_objects={'L1Dist': L1Dist, 'BinaryCrossentropy': tf.losses.BinaryCrossentropy})
       
 # now if we wanna use our model then simply
-
+# make predictions with RELOADED MODEL
 
 
 
