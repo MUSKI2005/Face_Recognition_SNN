@@ -667,7 +667,8 @@ siamese_model.summary()
 # Now we will test REAL TIME DATA, live
 # Setup verification images
 # We gonna connect our Webcam with OpenCV
-
+def verify(model,detection_threshold,verification_threshold): #4 positional arguments
+    results=[]
 
 
 
