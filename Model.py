@@ -671,6 +671,7 @@ siamese_model.summary()
 #  this gonna be 50% >1
 
 # then we gonna use detection threshold, this gonna give the no. of images which have successfully surpassed out of 50 images in the sample.
+#  30 images(no. of images)>60%
 def verify(model,detection_threshold,verification_threshold): #4 positional arguments
     results=[]
 
