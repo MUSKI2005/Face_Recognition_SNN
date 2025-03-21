@@ -664,6 +664,7 @@ siamese_model.predict([test_input,test_val])
 # now getting the summary of the model
 siamese_model.summary()
 
+# Now we will test REAL TIME DATA, live
 
 
 
