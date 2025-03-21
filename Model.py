@@ -665,7 +665,7 @@ siamese_model.predict([test_input,test_val])
 siamese_model.summary()
 
 # Now we will test REAL TIME DATA, live
-
+# Setup verification images
 
 
 
