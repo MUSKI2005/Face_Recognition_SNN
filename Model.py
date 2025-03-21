@@ -667,6 +667,7 @@ siamese_model.summary()
 # Now we will test REAL TIME DATA, live
 # Setup verification images
 # We gonna connect our Webcam with OpenCV
+#  Now we gonna set a verification threshold above which a person can be said in a +ve class.
 def verify(model,detection_threshold,verification_threshold): #4 positional arguments
     results=[]
 
