@@ -669,6 +669,8 @@ siamese_model.summary()
 # We gonna connect our Webcam with OpenCV
 #  Now we gonna set a verification threshold above which a person can be said in a +ve class.
 #  this gonna be 50% >1
+
+# then we gonna use detection threshold, this gonna give the no. of images which have successfully surpassed out of 50 images in the sample.
 def verify(model,detection_threshold,verification_threshold): #4 positional arguments
     results=[]
 
