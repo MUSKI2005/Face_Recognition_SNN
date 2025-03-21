@@ -666,7 +666,7 @@ siamese_model.summary()
 
 # Now we will test REAL TIME DATA, live
 # Setup verification images
-
+# We gonna connect our Webcam with OpenCV
 
 
 
