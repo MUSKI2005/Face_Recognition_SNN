@@ -718,4 +718,6 @@ for i in range(10):  # Test indices from 0 to 9
             cv2.imshow('verification',resized_frame)
             
             # verification trigger, if we hittin V on the keyboard then it should verifiy
-
+            if cv2.waitKey(10)&0xFF==ord('v'):
+                # # saving our input image to input_image folder
+                # cv2.imwrite(os.path.join('application_data','input_image','input_image.jpg'),resized_frame)
