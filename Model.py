@@ -704,7 +704,7 @@ os.makedirs(os.path.join('application_data', 'input_image'), exist_ok=True)
 
 #  now grabbing an image from the webcam
 #  OpenCV real time verification
-
+for i in range(10):  # Test indices from 0 to 9
 
 
 
