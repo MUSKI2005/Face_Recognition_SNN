@@ -699,6 +699,8 @@ def verify(model,detection_threshold,verification_threshold): #4 positional argu
 
 # now if we wanna see all the images present in the folder then simply LIST those
 
+# Ensure the input_image directory exists
+os.makedirs(os.path.join('application_data', 'input_image'), exist_ok=True)
 
 
 
