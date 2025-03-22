@@ -702,6 +702,7 @@ def verify(model,detection_threshold,verification_threshold): #4 positional argu
 # Ensure the input_image directory exists
 os.makedirs(os.path.join('application_data', 'input_image'), exist_ok=True)
 
+#  now grabbing an image from the webcam
 
 
 
