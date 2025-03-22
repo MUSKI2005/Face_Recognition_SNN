@@ -689,7 +689,10 @@ def verify(model,detection_threshold,verification_threshold): #4 positional argu
      # Verification Threshold:Proportion of positive predictions /total positive samples
     verification=detection/len(os.listdir(os.path.join('application_data','verification_images')))
     print(f"Verification: {verification}")  # Debugging
-
+    
+    verified=verification>verification_threshold
+    print(f"Verified: {verified}")  # Debugging
+    return results,verified
 
 
 
