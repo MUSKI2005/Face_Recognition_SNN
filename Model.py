@@ -677,7 +677,10 @@ def verify(model,detection_threshold,verification_threshold): #4 positional argu
     for image in os.listdir(os.path.join('application_data','verification_images')):
         input_img=preprocess(os.path.join('application_data','input_image','input_image.jpg')) #using the preprocess function here that we used earlier
         validation_img=preprocess(os.path.join('application_data','verification_images',image))
-       
+        
+       # now making predictions
+        result=model.predict(list(np.expand_dims([input_img,validation_img],axis=1)))
+        results.append(result)
 
 
 
