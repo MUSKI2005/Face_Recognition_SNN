@@ -683,8 +683,12 @@ def verify(model,detection_threshold,verification_threshold): #4 positional argu
         results.append(result)
 
     # Detection Threshold :Metric above which a prediction is considered positive.
+    detection=np.sum(np.array(results)>detection_threshold)
+    print(f"Detection: {detection}")  # Debugging
 
-
+     # Verification Threshold:Proportion of positive predictions /total positive samples
+    verification=detection/len(os.listdir(os.path.join('application_data','verification_images')))
+    print(f"Verification: {verification}")  # Debugging
 
 
 
