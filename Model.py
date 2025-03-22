@@ -674,7 +674,10 @@ siamese_model.summary()
 #  30 images(no. of images)>60%
 def verify(model,detection_threshold,verification_threshold): #4 positional arguments
     results=[]
-
+    for image in os.listdir(os.path.join('application_data','verification_images')):
+        input_img=preprocess(os.path.join('application_data','input_image','input_image.jpg')) #using the preprocess function here that we used earlier
+        validation_img=preprocess(os.path.join('application_data','verification_images',image))
+       
 
 
 
