@@ -714,5 +714,8 @@ for i in range(10):  # Test indices from 0 to 9
                 break
             # IF WE WANT TO RESIZE THE IMAGE TO 250*250 DIMENSIONS, because the dataset images are of 250*250 only, THEN
             # Resize the frame to 250x250 pixels
-
+            resized_frame = cv2.resize(frame, (250, 250))
+            cv2.imshow('verification',resized_frame)
+            
+            # verification trigger, if we hittin V on the keyboard then it should verifiy
 
