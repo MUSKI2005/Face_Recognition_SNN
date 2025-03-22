@@ -695,9 +695,9 @@ def verify(model,detection_threshold,verification_threshold): #4 positional argu
     return results,verified
 
 # now we gonna print the path to our verification_images 
+# print(os.path.join('application_data','verification_images'))
 
-
-
+# now if we wanna see all the images present in the folder then simply LIST those
 
 
 
