@@ -694,6 +694,7 @@ def verify(model,detection_threshold,verification_threshold): #4 positional argu
     print(f"Verified: {verified}")  # Debugging
     return results,verified
 
+# now we gonna print the path to our verification_images 
 
 
 
