@@ -705,7 +705,14 @@ os.makedirs(os.path.join('application_data', 'input_image'), exist_ok=True)
 #  now grabbing an image from the webcam
 #  OpenCV real time verification
 for i in range(10):  # Test indices from 0 to 9
-
-
+   cap = cv2.VideoCapture(i)
+    if cap.isOpened():
+        while cap.isOpened():
+            ret, frame = cap.read()
+            if not ret:
+                print("Failed to read frame. Exiting...")
+                break
+            # IF WE WANT TO RESIZE THE IMAGE TO 250*250 DIMENSIONS, because the dataset images are of 250*250 only, THEN
+            # Resize the frame to 250x250 pixels
 
 
