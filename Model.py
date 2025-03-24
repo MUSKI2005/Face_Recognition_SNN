@@ -744,7 +744,7 @@ print("Results Array:", results)
 # then getting the array of either true and false samples
 print(np.squeeze(results)>0.5)
 
-
+# now the no. of images passing the verification
 
 
 
