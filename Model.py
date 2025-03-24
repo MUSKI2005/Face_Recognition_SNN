@@ -729,7 +729,11 @@ for i in range(10):  # Test indices from 0 to 9
                 # now RUN our verification function
                 results,verified=verify(model,0.9,0.7) #we can even stricten this checking by taking values as 0.7,0.8,0.6..
                 print("Verification Results:", verified)
-
+                
+                break
+            # Closing the camera
+            if cv2.waitKey(10)&0xFF==ord('q'):
+                break
 
 
 
