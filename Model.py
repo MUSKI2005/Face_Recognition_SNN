@@ -741,7 +741,8 @@ cv2.destroyAllWindows()
 print(model.summary())
 print("Results Array:", results)
 
-
+# then getting the array of either true and false samples
+print(np.squeeze(results)>0.5)
 
 
 
