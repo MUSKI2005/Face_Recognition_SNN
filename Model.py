@@ -722,3 +722,87 @@ for i in range(10):  # Test indices from 0 to 9
                 # # saving our input image to input_image folder
                 # cv2.imwrite(os.path.join('application_data','input_image','input_image.jpg'),resized_frame)
                 # Save the input image
+                input_image_path = os.path.join('application_data', 'input_image', 'input_image.jpg')
+                cv2.imwrite(input_image_path, resized_frame)
+                print(f"Input image saved to: {input_image_path}")
+
+                # now RUN our verification function
+                results,verified=verify(model,0.9,0.7) #we can even stricten this checking by taking values as 0.7,0.8,0.6..
+                print("Verification Results:", verified)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
