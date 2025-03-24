@@ -735,6 +735,11 @@ for i in range(10):  # Test indices from 0 to 9
             if cv2.waitKey(10)&0xFF==ord('q'):
                 break
 
+cap.release() 
+cv2.destroyAllWindows()  
+
+print(model.summary())
+print("Results Array:", results)
 
 
 
