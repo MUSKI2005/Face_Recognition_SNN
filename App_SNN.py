@@ -16,6 +16,11 @@ from kivy.graphics.texture import Texture
 from kivy.logger import Logger
 
 # iMPORT other dependencies
+import cv2
+import tensorflow as tf
+from layers import L1Dist
+import os
+import numpy as np
 
 
 
