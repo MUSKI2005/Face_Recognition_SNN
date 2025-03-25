@@ -746,6 +746,7 @@ print(np.squeeze(results)>0.5)
 
 # now the no. of images passing the verification
 print(np.squeeze(results)>0.7) #can even set this high ,let's say either 0.6,.7,.8 checking
+print(np.squeeze(results)>0.8)
 
 
 
