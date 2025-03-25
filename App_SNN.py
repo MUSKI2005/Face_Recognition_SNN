@@ -23,7 +23,7 @@ import os
 import numpy as np
 
 # Build app and layout
-
+def build(self): #inherient function which we usually use in KIVY
 
 
 
