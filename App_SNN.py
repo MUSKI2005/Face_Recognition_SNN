@@ -11,6 +11,9 @@ from kivy.uix.button import Button
 from kivy.uix.label import Label
 
 # Import oth kivy dependencies
+from kivy.clock import Clock
+from kivy.graphics.texture import Texture
+from kivy.logger import Logger
 
 
 
