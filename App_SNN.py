@@ -22,7 +22,7 @@ from layers import L1Dist
 import os
 import numpy as np
 
-
+# Build app and layout
 
 
 
