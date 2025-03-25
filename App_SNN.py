@@ -6,9 +6,9 @@ from kivy.app import App
 from kivy.uix.boxLayout import BoxLayout
 
 # import kivy UX components
-# from kivy.uix.image import Image 
-# from kivy.graphics.texture import Texture
-# from kivy.logger import Logger
+from kivy.uix.image import Image 
+from kivy.graphics.texture import Texture
+from kivy.logger import Logger
 
 
 
