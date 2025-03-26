@@ -30,7 +30,8 @@ def build(self): #inherient function which we usually use in KIVY
     
     # Add items to the Layout
     layout=BoxLayout(orientation='vertical') #here the sequence of 
-
+    # the image, label,button are set sequentilly ina vertical manner ,top to bottom
+    
 
 
 
