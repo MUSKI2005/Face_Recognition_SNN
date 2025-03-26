@@ -27,7 +27,9 @@ def build(self): #inherient function which we usually use in KIVY
     self.web_cam=Image(size_hint=(1,.8)) #these three are core UX components Image,Button,label
     self.button=Button(text="Verify",on_press=self.verify,size_hint=(1,.1))
     self.verification_label=Label(text="Verification Uninitiated",size_hint=(1,.1))
-
+    
+    # Add items to the Layout
+    layout=BoxLayout(orientation='vertical') #here the sequence of 
 
 
 
