@@ -32,6 +32,8 @@ def build(self): #inherient function which we usually use in KIVY
     layout=BoxLayout(orientation='vertical') #here the sequence of 
     # the image, label,button are set sequentilly ina vertical manner ,top to bottom
     layout.add_widget(self.web_cam)
+    layout.add_widget(self.button)
+    layout.add_widget(self.verification_label)
 
 
 
