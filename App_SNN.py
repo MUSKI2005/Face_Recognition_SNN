@@ -36,6 +36,7 @@ def build(self): #inherient function which we usually use in KIVY
     layout.add_widget(self.verification_label)
 
     # Set up the capture using OpenCV
+    for i in range(10):  # Test indices from 0 to 9
 
 
 
