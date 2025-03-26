@@ -24,7 +24,7 @@ import numpy as np
 
 # Build app and layout
 def build(self): #inherient function which we usually use in KIVY
-
+    self.web_cam=Image(size_hint=(1,.8)) #these three are core UX components Image,Button,label
 
 
 
