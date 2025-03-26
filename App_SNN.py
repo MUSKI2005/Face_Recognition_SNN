@@ -35,6 +35,8 @@ def build(self): #inherient function which we usually use in KIVY
     layout.add_widget(self.button)
     layout.add_widget(self.verification_label)
 
+    # Set up the capture using OpenCV
+
 
 
 
