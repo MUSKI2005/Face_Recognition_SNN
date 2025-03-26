@@ -37,6 +37,7 @@ def build(self): #inherient function which we usually use in KIVY
 
     # Set up the capture using OpenCV
     for i in range(10):  # Test indices from 0 to 9
+        self.capture = cv2.VideoCapture(i)
 
 
 
