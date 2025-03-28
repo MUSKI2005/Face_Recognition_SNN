@@ -78,9 +78,11 @@ def build(self): #inherient function which we usually use in KIVY
          # reading the image from the file path
          byte_img=tf.io.read_file(file_path)
          # loading in the image 
-        img=tf.io.decode_jpeg(byte_img)
-        # Preprocessing the image to be 100*100*3
-        img=tf.image.resize(img,(100,100))
+         img=tf.io.decode_jpeg(byte_img)
+         # Preprocessing the image to be 100*100*3
+         img=tf.image.resize(img,(100,100))
+         # scanning our image to between 0 and 1
+         img=img/255.0
 
 
 
