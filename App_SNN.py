@@ -91,6 +91,9 @@ def build(self): #inherient function which we usually use in KIVY
         # specifiy thresholds
         detection_threshold=0.6 #0.9,0.8,0.99
         verification_threshold=0.6 #0.8
+        
+        # capture the image from webcam
+        SAVE_PATH=os.path.join('application_data','input_image','input_image.jpg')
 
 
 
