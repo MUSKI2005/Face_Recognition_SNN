@@ -77,6 +77,8 @@ def build(self): #inherient function which we usually use in KIVY
     def preprocess(self,file_path):
          # reading the image from the file path
          byte_img=tf.io.read_file(file_path)
+         # loading in the image 
+        img=tf.io.decode_jpeg(byte_img)
 
 
 
