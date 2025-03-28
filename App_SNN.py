@@ -47,6 +47,9 @@ def build(self): #inherient function which we usually use in KIVY
         
         # Check if the model file exists
         model_path = 'siamesemodel2.keras'
+        if not os.path.exists(model_path):
+            print(f"Model file not found: {model_path}")
+            return layout
 
 
 
