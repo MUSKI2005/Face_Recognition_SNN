@@ -55,8 +55,9 @@ def build(self): #inherient function which we usually use in KIVY
         self.model = tf.keras.models.load_model(model_path, custom_objects={'L1Dist': L1Dist})
 
         Clock.schedule_interval(self.update, 1.0 / 33.0)  # Update at 30 FPS
+        return layout
 
-
+    # Run continuously to get webcam feed
 
 
 
