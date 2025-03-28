@@ -45,6 +45,8 @@ def build(self): #inherient function which we usually use in KIVY
             print("No camera found")
             return layout
         
+        # Check if the model file exists
+        model_path = 'siamesemodel2.keras'
 
 
 
