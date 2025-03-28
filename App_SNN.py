@@ -67,6 +67,8 @@ def build(self): #inherient function which we usually use in KIVY
         # Resize the frame to 250x250 pixels
         resized_frame = cv2.resize(frame, (250, 250))
 
+         # Convert it to texture
+
 
 
 
