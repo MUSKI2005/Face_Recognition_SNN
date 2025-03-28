@@ -100,6 +100,7 @@ def build(self): #inherient function which we usually use in KIVY
 
         # Build results array
         results=[]
+        for image in os.listdir(os.path.join('application_data','verification_images')):
 
 
 
