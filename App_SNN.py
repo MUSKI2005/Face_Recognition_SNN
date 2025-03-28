@@ -58,6 +58,12 @@ def build(self): #inherient function which we usually use in KIVY
         return layout
 
     # Run continuously to get webcam feed
+    def update(self, *args):
+        ret, frame = self.capture.read()
+        if not ret:
+            print("Failed to read frame. Exiting...")
+            return
+
 
 
 
