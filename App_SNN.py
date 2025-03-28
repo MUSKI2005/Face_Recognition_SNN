@@ -52,6 +52,9 @@ def build(self): #inherient function which we usually use in KIVY
             return layout
 
         # Load the TensorFlow/Keras model
+        self.model = tf.keras.models.load_model(model_path, custom_objects={'L1Dist': L1Dist})
+
+        Clock.schedule_interval(self.update, 1.0 / 33.0)  # Update at 30 FPS
 
 
 
