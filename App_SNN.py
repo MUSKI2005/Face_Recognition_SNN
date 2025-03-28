@@ -63,7 +63,9 @@ def build(self): #inherient function which we usually use in KIVY
         if not ret:
             print("Failed to read frame. Exiting...")
             return
-
+        
+        # Resize the frame to 250x250 pixels
+        resized_frame = cv2.resize(frame, (250, 250))
 
 
 
