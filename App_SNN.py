@@ -87,6 +87,11 @@ def build(self): #inherient function which we usually use in KIVY
          return img
     
     # Verification function to verify 
+    def verify(self,*args):
+        # specifiy thresholds
+        detection_threshold=0.6 #0.9,0.8,0.99
+        verification_threshold=0.6 #0.8
+
 
 
 
