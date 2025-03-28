@@ -68,7 +68,13 @@ def build(self): #inherient function which we usually use in KIVY
         resized_frame = cv2.resize(frame, (250, 250))
 
          # Convert it to texture
+        buf = cv2.flip(resized_frame, 0).tostring()
+        image_texture = Texture.create(size=(resized_frame.shape[1], resized_frame.shape[0]), colorfmt='bgr')
+        image_texture.blit_buffer(buf, colorfmt='bgr', bufferfmt='ubyte')
+        self.web_cam.texture = image_texture
 
+    # Load image from the file and convert to 100*100 px
+    def preprocess(self,file_path):
 
 
 
