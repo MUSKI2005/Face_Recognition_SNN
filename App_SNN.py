@@ -85,7 +85,8 @@ def build(self): #inherient function which we usually use in KIVY
          img=img/255.0
          # return the image 
          return img
-
+    
+    # Verification function to verify 
 
 
 
