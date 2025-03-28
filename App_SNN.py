@@ -76,6 +76,7 @@ def build(self): #inherient function which we usually use in KIVY
     # Load image from the file and convert to 100*100 px
     def preprocess(self,file_path):
          # reading the image from the file path
+         byte_img=tf.io.read_file(file_path)
 
 
 
