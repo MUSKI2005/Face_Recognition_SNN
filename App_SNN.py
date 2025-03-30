@@ -108,6 +108,8 @@ def build(self): #inherient function which we usually use in KIVY
             result=self.model.predict(list(np.expand_dims([input_img,validation_img],axis=1)))
             results.append(result)
 
+        # Detection Threshold :Metric above which a prediction is considered positive.
+
 
 
 
