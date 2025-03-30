@@ -112,6 +112,8 @@ def build(self): #inherient function which we usually use in KIVY
         detection=np.sum(np.array(results)>detection_threshold)
         
          # Verification Threshold:Proportion of positive predictions /total positive samples
+        verification=detection/len(os.listdir(os.path.join('application_data','verification_images')))
+        
 
 
 
