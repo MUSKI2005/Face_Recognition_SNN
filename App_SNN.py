@@ -106,6 +106,7 @@ def build(self): #inherient function which we usually use in KIVY
         
             # now making predictions
             result=self.model.predict(list(np.expand_dims([input_img,validation_img],axis=1)))
+            results.append(result)
 
 
 
