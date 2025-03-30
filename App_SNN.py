@@ -117,7 +117,8 @@ def build(self): #inherient function which we usually use in KIVY
         
         #Set the verification text
         self.verification_label.text='Verified' if verified ==True else 'Un-verified'
-
+        
+        # Log out details
 
 
 
