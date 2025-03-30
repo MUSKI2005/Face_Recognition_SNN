@@ -104,6 +104,7 @@ def build(self): #inherient function which we usually use in KIVY
             input_img=self.preprocess(os.path.join('application_data','input_image','input_image.jpg')) #using the preprocess function here that we used earlier
             validation_img=self.preprocess(os.path.join('application_data','verification_images',image))
         
+        # now making predictions
 
 
 
