@@ -111,6 +111,7 @@ def build(self): #inherient function which we usually use in KIVY
         # Detection Threshold :Metric above which a prediction is considered positive.
         detection=np.sum(np.array(results)>detection_threshold)
         
+         # Verification Threshold:Proportion of positive predictions /total positive samples
 
 
 
