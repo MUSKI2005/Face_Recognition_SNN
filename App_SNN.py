@@ -113,8 +113,10 @@ def build(self): #inherient function which we usually use in KIVY
         
          # Verification Threshold:Proportion of positive predictions /total positive samples
         verification=detection/len(os.listdir(os.path.join('application_data','verification_images')))
+        verified=verification>verification_threshold
         
-
+        #Set the verification text
+        self.verification_label.text='Verified' if verified ==True else 'Un-verified'
 
 
 
