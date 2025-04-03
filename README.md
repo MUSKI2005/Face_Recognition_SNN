@@ -4,6 +4,6 @@
 
 1.Set up a folder  DONE
 2.Install KIVY  DONE
-
+3.Set up validation folder
 
 
