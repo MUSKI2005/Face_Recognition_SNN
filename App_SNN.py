@@ -123,6 +123,8 @@ def build(self): #inherient function which we usually use in KIVY
         Logger.info(detection)
         Logger.info(verification)
         Logger.info(np.sum(np.array(results)>0.2))
+        Logger.info(np.sum(np.array(results)>0.4))
+        Logger.info(np.sum(np.array(results)>0.5))
 
 
 
