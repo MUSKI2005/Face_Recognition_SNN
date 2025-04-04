@@ -10,7 +10,7 @@
 5.Bring over h5 model
 6.Import dependencies for KIVY
 7.Build layout
-
+8.Build update function
 
 
 
