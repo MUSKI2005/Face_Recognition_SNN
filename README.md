@@ -16,7 +16,7 @@
 10.bring over verification function
 11.Update verification function to handle new paths and save the current frame
 12.Update verification fucntion to set verified text
-
+13.link verification function to button
 
 
 
