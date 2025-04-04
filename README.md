@@ -14,7 +14,7 @@
 8.Build update function
 9.Build over preprocessing function
 10.bring over verification function
-
+11.Update verification function to handle new paths and save the current frame
 
 
 
